@@ -1,0 +1,11 @@
+Pollutant,Unit,Min.Threshold,Max.Threshold,Info,average
+Temp Water,°C,10,13,"In °C, compliance with thresholds.",11.22
+Ammonia(N),mg/L,0.88,1.5,"In mg/L, compliance with thresholds.",1.12 mg/L
+Orthophospht,Unknown,0.15,0.49,Unknown units: compliance.,0.29 mg/L
+N Oxidised,mg/L,2,5.5,"In mg/L, compliance with thresholds.",3.81 mg/L
+pH,pH units,6.5,8.5,"In pH, compliance with thresholds.",7.86
+Nitrite-N,mg/L,0.02,0.04,"In mg/L, compliance with thresholds.",0.033 mg/L
+O Diss %sat,% saturation,80,105,"In % saturation, compliance with thresholds.",93.15%
+Cond @ 25C,µS/cm,400,700,"In µS/cm, compliance with thresholds.",569.25 µS/cm
+Nitrate-N,mg/L,1.5,7,"In mg/L, compliance with thresholds.",3.84 mg/L
+Oxygen Diss,mg/L,7,13,"In mg/L, compliance with thresholds.",10.26 mg/L
