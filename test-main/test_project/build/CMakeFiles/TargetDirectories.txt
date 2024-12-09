@@ -1,0 +1,5 @@
+/home/yuval/Documents/gal/test-main/test_project/build/CMakeFiles/test.dir
+/home/yuval/Documents/gal/test-main/test_project/build/CMakeFiles/edit_cache.dir
+/home/yuval/Documents/gal/test-main/test_project/build/CMakeFiles/rebuild_cache.dir
+/home/yuval/Documents/gal/test-main/test_project/build/CMakeFiles/test_autogen_timestamp_deps.dir
+/home/yuval/Documents/gal/test-main/test_project/build/CMakeFiles/test_autogen.dir
