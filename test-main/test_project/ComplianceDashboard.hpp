@@ -22,33 +22,33 @@ public:
     ~ComplianceDashboard();
 
 private:
-    void setupUI();
-    void populateTable(const std::string& filename);
-    void applyFilters();
+    void initializeUI();
+    void loadTableData(const std::string& filePath);
+    void applySearchFilters();
 
-    // New method to calculate compliance status
-    std::string calculateComplianceStatus(const WaterSample& sample, const std::vector<PollutantSample>& pollutantSamples);
-    void populateStats(const std::string& bestLocation, const std::string& worstLocation,
-                                         const std::string& bestYear, const std::string& worstYear,
-                                         const std::string& bestPollutant, const std::string& worstPollutant,
-                                         int totalSamples, int missingDataCount, int compliantSamples,
-                                         int mediumSamples, int nonCompliantSamples);
+    // Updated method to calculate compliance status
+    std::string assessPerformanceStatus(const WaterSample& sample, const std::vector<PollutantSample>& pollutantSamples);
+    void displayStats(const std::string& topLocation, const std::string& bottomLocation,
+                      const std::string& topYear, const std::string& bottomYear,
+                      const std::string& topPollutant, const std::string& bottomPollutant,
+                      int totalEntries, int missingEntryCount, int compliantEntries,
+                      int averageEntries, int nonCompliantEntries);
 
-    QWidget *centralWidget;
-    QVBoxLayout *mainLayout;
-    QHBoxLayout *filtersLayout;
-    QHBoxLayout *contentLayout;
-    QHBoxLayout *cardsLayout; 
-    QTableWidget *detailedTable;
-    QComboBox *yearFilter;
-    QComboBox *locationFilter;
-    QComboBox *pollutantFilter;
-    QComboBox *statusFilter;
-    QPushButton *filterButton;
-    QTextEdit *importantInfo;
-    QLabel *footer;
-    QFrame *summaryCards[4];
-    QLabel *header;
+    QWidget *mainWidget;
+    QVBoxLayout *layoutMain;
+    QHBoxLayout *layoutFilters;
+    QHBoxLayout *layoutContent;
+    QHBoxLayout *layoutCards; 
+    QTableWidget *dataTable;
+    QComboBox *filterYear;
+    QComboBox *filterLocation;
+    QComboBox *filterPollutant;
+    QComboBox *filterStatus;
+    QPushButton *applyFilterButton;
+    QTextEdit *infoBox;
+    QLabel *footerText;
+    QFrame *summaryFrames[4];
+    QLabel *headerText;
 
     // Add other variables as needed...
 };
